@@ -1,0 +1,63 @@
+.menuTab {
+  position: fixed;
+  widgth: 80%;
+  top: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  right: 0;
+  height: 100%;
+  background: rgb(0,0,0);
+  z-index: 100;
+  padding: 30px 5px 20px 5px;
+  transition: all 0.4s;
+}
+
+.menuTab div {
+  position: relative;
+  padding: 5px;
+  text-align: right;
+  font-size: 1.7em;
+  color: rgba(190,190,190,0.5);
+  overflow: hidden;
+  user-select: none;
+}
+
+.menuTab .active {
+  border-bottom: 2px solid rgb(150,241,151);
+  color: rgb(250,250,250);
+}
+
+.showMenu {
+  visibility: visible;
+  width: 80%;
+}
+.hideMenu {
+  visibility: hidden;
+  width: 0;
+}
+
+.menuTabBg {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(76,82,83,0.6);
+  z-index: 99;
+}
+
+.menuTab .active::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background: rgb(70,239,79);
+  border-radius: 50%;
+  box-shadow: 
+          1px 1px 5px rgb(159,246,163),
+          -1px -1px 5px rgb(159,246,163);
+}

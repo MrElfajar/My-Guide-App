@@ -1,0 +1,11 @@
+
+.isi div {
+  padding: 8px;
+  margin-bottom: 5px;
+  color: #eaeaea;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.bg-smooth-blue{
+  background: #9DAAF2;
+}

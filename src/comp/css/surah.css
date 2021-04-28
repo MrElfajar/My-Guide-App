@@ -1,0 +1,92 @@
+.surahOuter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 300;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+  padding: 10px;
+}
+
+.surah {
+  padding: 5px;
+  padding-right: 10px;
+  background-color: #dadada;
+  position: relative;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.surah .header {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-column-gap: 5px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.surah .header div{
+  padding: 8px;
+  border-radius: 5px;
+  user-select: none;
+}
+
+.surah .header .surahTitle{
+  text-align: center;
+  font-size: 1.2em;
+  background-color: #00afda;
+}
+.surah .header .closeBtn{
+  background-color: #df4343;
+  display: grid;
+  place-items: center;
+}
+  
+.row {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.col {
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.surahContent .row:nth-child(even) > .col {
+  background-color: #fcf4d2;
+}
+.arab {
+  font-size: 1.2em;
+}
+.text {
+  font-size: 0.5em;
+  color : #222222;
+}
+
+.none {
+  display: none;
+}
+
+.hide {
+  visibility: hidden;
+  transform: scale(0.7);
+  opacity: 0.3;
+  animation: surahHide 0.4s;
+}
+
+.show {
+  visibility: visible;
+  animation: surahShow 0.6s;
+}
+
+@keyframes surahShow {
+  from {transform: scale(0.8);}
+  to {transform: scale(1);}
+}
+@keyframes surahHide {
+  from {transform: scale(1);}
+  to {transform: scale(0.7);}
+}

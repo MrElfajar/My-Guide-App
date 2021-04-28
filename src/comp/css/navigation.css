@@ -1,0 +1,21 @@
+.navigation {
+  width: 100%;
+  position: fixed;
+  height: 40px;
+  top: 0;
+  background: rgba(58,59,59,0.737);
+  left: 0;
+  display: flex;
+  z-index: 200;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 10px;
+}
+.menu {
+  margin-right: 10px;
+  background: red;
+}

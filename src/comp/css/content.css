@@ -1,0 +1,52 @@
+.contentOuter {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  background-color: #1A2238;
+  color: #fff;
+  padding: 5px;
+  overflow: auto;
+}
+
+.title{
+  background-color: rgba(93,93,93,0.729);
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.isi {
+  padding: 0 5px 0 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.pop{
+  animation: pop 0.5s;
+}
+.pop-2{
+  animation: pop2 0.6s;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.95);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes pop2 {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1);
+  }
+}

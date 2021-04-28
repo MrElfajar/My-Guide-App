@@ -1,0 +1,52 @@
+.tajwidContent {
+  height: 100%;
+  padding: 0 10px;
+  padding-top: 30px;
+  overflow: scroll;
+}
+
+.card {
+  background-color: rgb(221,237,233);
+  border-radius: 8px;
+  position: relative;
+  min-height: 100px;
+  margin-bottom: 30px;
+}
+
+.card .cardTitle {
+  height: 30px;
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ikhfa {
+  background-color: #ff3939;
+}
+.ikhfaSyafawi {
+  background-color: #f5b0df;
+}
+.iqlab {
+  background-color: rgb(0,147,247);
+}
+.ghunnah {
+  background-color: rgb(252,173,69);
+}
+.idghamBighunnah {
+  background-color: #eb4bff;
+}
+.idghamBilaghunnah {
+  background-color: rgb(225,225,225);
+}
+.qalqalah {
+  background-color: #08ca1c;
+}
+.qalqalah {
+  background-color: #08ca1c;
+}
